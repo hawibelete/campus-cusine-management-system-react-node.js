@@ -1,0 +1,192 @@
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.register-page .content {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 550px;
+}
+
+.register-page .header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-page .header h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.register-page .header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.register-page .input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.register-page input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.register-page input:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.register-page .password-input {
+    padding-right: 50px;
+}
+
+.register-page .show-password-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #4a90e2;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.register-page .password-strength {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.register-page .password-strength p {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.register-page .password-strength p.valid {
+    color: #2ecc71;
+}
+
+.register-page .password-strength p.invalid {
+    color: #e74c3c;
+}
+
+.register-page .password-strength ul {
+    list-style: none;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.register-page .password-strength li {
+    margin-bottom: 3px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.register-page .password-strength li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.register-page .password-strength li.valid {
+    color: #2ecc71;
+}
+
+.register-page .password-strength li.invalid {
+    color: #e74c3c;
+}
+
+.register-page .terms {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.register-page .terms label {
+    display: flex;
+    align-items: center;
+    color: #666;
+    cursor: pointer;
+}
+
+.register-page .terms input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.register-page .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-page .register-button:hover {
+    background-color: #3a7bc8;
+}
+
+.register-page .register-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.register-page .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.register-page .error-message {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.register-page .login-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-page .login-link a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.register-page .login-link a:hover {
+    text-decoration: underline;
+}

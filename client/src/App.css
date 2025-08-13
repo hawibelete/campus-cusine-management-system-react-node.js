@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title h2 {
+  color: #0D6EFD;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+section[aria-label="Notifications alt+T"] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin: 1rem 0 0.5rem;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.transition {
+  transition: all 0.3s ease;
+}

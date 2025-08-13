@@ -1,0 +1,9 @@
+export { default as Home } from "../../../pages/customer/Home/Home";
+export { default as About } from "./About";
+export { default as DarkModeToggle } from "../../shared/DarkModeToggle";
+export { default as Footer } from "./Footer";
+export { default as Hero } from "./Hero";
+export { default as Lounges } from "./Lounges";
+export { default as Navbar } from "./Navbar";
+export { default as PopularItems } from "./PopularItems";
+export { default as Reviews } from "./Reviews";
